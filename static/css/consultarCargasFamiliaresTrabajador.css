@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+body, html{
+    height: 95.5%;
+    font-family: 'Inter', sans-serif !important;
+}
+.container {
+    height: 90%;
+}
+
+nav {
+    background-color: #D9D9D9;
+    justify-content: end;
+    display: flex;
+    height: 70px;
+}
+nav h2 {
+    margin: auto;
+}
+
+button{
+    width: 150px;
+    background-color: #3a1313;
+    color: white;
+    border-radius: 20px !important;
+    border: none;
+    height: 30px;
+}
+
+.espacio{
+    margin: 300px
+}
+
+.row {
+    margin-top: 50px !important;
+}
+
+table{
+    width: 1400px !important;
+}
+
+#contenedorTabla{
+    display: flex;
+    justify-content: center !important;
+}
+
+#regresar{
+    position: relative;
+    top: 250px;
+    left: 250px;
+}
+
+.bt-ingresar button{
+    width: 300px;
+}

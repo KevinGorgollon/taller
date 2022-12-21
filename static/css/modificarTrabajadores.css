@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+body, html {
+    height: 95.5%;
+    font-family: 'Inter', sans-serif !important;
+}
+nav {
+    background-color: #D9D9D9;
+    justify-content: end;
+    display: flex;
+    height: 70px;
+}
+nav h2 {
+    margin: auto;
+}
+
+ input{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    border: 0;
+    width: 200px;
+}
+
+#buscador {
+    margin: 20px;
+}
+#buscador p {
+    text-align: center;
+    color: red;
+}
+
+#buscador *{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#buscador button{
+    width: 150px;
+    height: 30px;
+    background-color: #3A1313;
+    color: white;
+    border-radius: 30px;
+}
+
+.col-4{
+    margin-top: 30px;
+}
+
+.col-4 button{
+    width: 250px;
+    background-color: #3a1313;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    height: 35px;
+
+}

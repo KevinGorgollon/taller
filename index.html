@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/css/index.css" />
+    <title>Inicio Sesion</title>
+  </head>
+  <body>
+    <nav>
+
+      <p>LOGO</p>
+    </nav>
+    <div id="contenedor">
+      <div id="formulario">
+        <h2>Inicio de Sesion</h2>
+
+        <p>Usuario</p>
+        <input
+          type="text"
+          name=""
+          id="user"
+          placeholder="Ingrese Usuario"
+          required
+        />
+        <p>Clave</p>
+        <input
+          type="password"
+          id="passwd"
+          placeholder="Ingrese Contraseña"
+          required
+        />
+        <br />
+        <div id="validar"></div>
+        <button onclick="iniciarSesion()">Iniciar Sesion</button>
+
+        <script src="./static/js/index.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

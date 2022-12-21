@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crear Trabajadores</title>
+  <link rel="stylesheet" href="../static/css/crearJefe.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav>
+    <h2>Crear Jefe RRHH</h2>
+    <p><img src="../img/CORREOS Express.png" height="70px"></p>
+  </nav>
+
+  <div class="container-xl">
+    <div class="row">
+      <div class="col-4">
+        <label for="">Rut: </label>
+        <br />
+        <input id="rut" onchange="validarRut()" type="text" />
+        <div class="salida"></div>
+      </div>
+
+      <div class="col-4">
+        <label for="">Telefono: </label>
+        <br />
+        <input id="telefono" type="text" />
+      </div>
+
+      <div class="col-4">
+        <label for="">Usuario: </label>
+        <br />
+        <input id="usuario" type="text" />
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-4">
+        <label for="">Nombre: </label>
+        <br />
+        <input id="nombre" type="text" />
+      </div>
+
+      <div class="col-4">
+        <label for="">Cargo: </label>
+        <br />
+        <input id="cargo" type="text" />
+      </div>
+
+      <div class="col-4">
+        <label for="">Clave: </label>
+        <br />
+        <input id="clave" type="text" />
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-4">
+        <label for="">Apellido: </label>
+        <br />
+        <input id="apellido" type="text" />
+      </div>
+
+      <div class="col-4">
+        <label for="">Departamento: </label>
+        <br />
+        <input id="departamento" type="text" />
+      </div>
+
+      <div class="col-4">
+        <label for="">Fecha de Ingreso: </label>
+        <br />
+        <input id="fecha" type="date" />
+      </div>
+    </div>
+
+
+
+
+    <div class="row">
+      <div class="col-4">
+        <label for="">Direccion: </label>
+        <br />
+        <input id="direccion" type="text" />
+      </div>
+
+      <div class="col-4">
+        <div><label for="sexo">Sexo: </label></div>
+        <select id="sexo" name="sexo" class="form-select form-select-sm" aria-label="Ejemplo de .form-select-sm" onchange="ShowSelected()" >
+          <option selected>Seleccione el Sexo</option>
+          <option value="1">Masculino</option>
+          <option value="2">Femenino</option>
+        </select>
+      </div>
+
+      <div class="col-4">
+        <p id="mensajito"></p>
+      </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-4">
+      <div id="button">
+        <button onclick="window.history.back();">Atras</button>
+      </div>
+    </div>
+    <div class="col-2"></div>
+    <div class="col-4">
+      <div id="button">
+        <button id="guardar">Ingresar</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+  <script src="../static/js/crearJefe.js"></script>
+</body>
+
+</html>

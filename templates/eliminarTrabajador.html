@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Trabajadores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/eliminarTrabajador.css">
+</head>
+<body>
+    <nav>
+        <h2>Lista Trabajadores</h2>
+        <p><img src="../img/CORREOS Express.png" height="70px"></p>
+      </nav>
+      <div class="container">
+        <div class="row justify-content-md-center" id="eliminar">
+            <div class="col-md-auto">
+                <label for="">Rut del trabajador: </label>
+                <input type="text" id="rut">
+                <button id="botonEliminar">Eliminar Trabajador</button>
+                <div class="salida"> </div>
+            </div>
+        </div>
+            <div id="table">
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Rut</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Sexo</th>
+                        <th scope="col">Direccion</th>
+                        <th scope="col">Telefono</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla">
+                    </tbody>
+                  </table>
+            </div>
+        
+            <div class="row">
+                <div class="col-4">
+                    <button onclick="window.history.back()">Atras</button>
+                </div>
+            </div>
+      </div>
+
+    <script src="../static/js/eliminarTrabajador.js"></script>
+</body>
+</html>

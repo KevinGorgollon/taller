@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>consultar cargas familiares</title>
+    <link rel="stylesheet" href="../static/css/consultarCargasFamiliares.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <h2>Cargas Familiares</h2>
+        <p><img src="../img/CORREOS Express.png" height="70px"></p>
+      </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <label for="">Rut del trabajador: </label>
+                <input id="rut" onchange="validarRut()" type="text" />
+                <div class="salida"></div>
+                <div class="row">
+                    <div class="col" id="contenedorBuscar">
+                        <p id="mensajito"></p>
+                        <p id="mensajito2" ></p>
+                        <button id="save">Buscar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Rut</th>
+                        <th scope="col">Nombre/Apellido</th>
+                        <th scope="col">Parentesco</th>
+                        <th scope="col">Sexo</th>
+                      </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla">
+                    
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+
+        <button id="atras" onclick="window.history.back()"> Atras</button>
+    </div>
+    
+
+<script src="../static/js/consultarCargasFamiliares.js"></script>
+</body>
+</html>

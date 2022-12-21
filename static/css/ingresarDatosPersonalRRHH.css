@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+body, html {
+    height: 95.5%;
+    font-family: 'Inter', sans-serif !important;
+}
+
+
+
+nav{
+    background-color: #D9D9D9;
+    display: flex;
+    height: 70px;
+    justify-content: end;
+    align-items: center;
+}
+
+nav h2{
+    margin: auto;
+}
+
+#contenedor-formulario {
+    justify-content: center;
+    display: flex;
+}
+.col-3{
+    width: 100% !important;
+    text-align: left;
+    margin-top: 80px !important;
+}
+
+#formulario input {
+    border-radius: 15px;
+    background-color: #D9D9D9;
+}
+
+#formulario {
+    text-align: center;
+    justify-content: space-around;
+}
+
+#formulario label {
+    justify-content: end;
+}
+
+#formulario input{
+    width: 300px;
+}
+
+#formulario button{
+    margin-top: 250px;
+    width: 100px;
+    background-color: #3A1313;
+    color: white;
+    width: 170px;
+    border-radius: 20px;
+    border: none;
+}
